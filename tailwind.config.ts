@@ -7,7 +7,12 @@ const config: Config = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend:
+    {
+      fontFamily: {
+        'titillium': ['Titillium Web', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 };
