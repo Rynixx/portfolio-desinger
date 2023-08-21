@@ -10,7 +10,7 @@ export default function Preview(props) {
             <a class="font-bold underline-offset-8 underline decoration-4" href={props.route}>Zum Projekt</a>
         </div>
         <div class="justify-center">
-            <img src={props.image} class="w-px-500" alt={`Image for ${props.title}`} />
+            <img src={props.image} class="w-px-500" width="508px" height="315px" alt={`Image for ${props.title}`} />
         </div>
     </div>
     </>

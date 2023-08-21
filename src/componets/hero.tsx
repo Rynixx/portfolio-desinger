@@ -16,7 +16,7 @@ export default function Hero() {
 
       </div>
       <div class="flex flex-col ">
-        <img src={HeroImage} alt="Hero Bild des Desinger der Website"></img>
+        <img src={HeroImage} width={624} height={1000} alt="Hero Bild des Desinger der Website"></img>
         </div>
       </div>
     </>
