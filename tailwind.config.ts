@@ -12,6 +12,9 @@ const config: Config = {
       fontFamily: {
         'titillium': ['Titillium Web', 'sans-serif']
       },
+      backgroundImage: {
+        'svg-bubble': "url('/images/bg.svg')"
+       },
     },
   },
   plugins: [],
