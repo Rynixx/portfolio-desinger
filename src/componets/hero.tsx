@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       {/* Intro section */}
       <div class="flex flex-col w-full h-screen items-center px-8 lg:px-0 lg:flex-row ">
-        <div class="flex flex-col mx-auto w-1/2 font-titillium space-y-4 justify-center">
+        <div class="flex flex-col mx-auto lg:w-1/2 font-titillium space-y-4 justify-center">
           <h1 class="text-gray-800 text-5xl lg:text-7xl font-bold pt-8 lg:leading-relaxed">
             Hi, ich bin Aaron Suppan
           </h1>
@@ -38,14 +38,14 @@ export default function Hero() {
             Schau dir meine Arbeiten an
           </div>
         </div>
-        <div class="flex flex-col ">
+        <div class="lg:flex lg:flex-col hidden lg:visible  ">
           <picture>
             <source srcset={HeroImageWebP} type="image/webp" />
             <img
               src={HeroImage}
               width={624}
               height={1000}
-              alt="Hero Bild des Desinger der Website"
+              alt="Bild des Desinger der Website"
             />
           </picture>
         </div>
