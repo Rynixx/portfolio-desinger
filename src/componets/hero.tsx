@@ -2,6 +2,7 @@ import type { Component } from "solid-js";
 import HeroImage from "/images/hero.png";
 import HeroImageWebP from "/images/hero.webp";
 export default function Hero() {
+  let test="flex-row";
   return (
     <>
       {/* Intro section */}
