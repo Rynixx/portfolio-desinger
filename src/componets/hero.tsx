@@ -16,11 +16,11 @@ export default function Hero() {
               konzipierte
             </span>{" "}
             &{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-blue-300">
+            <span class="font-bold tracking-widest font-outline hover:bg-pink-300">
               gestalte
             </span>
             ,{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-blue-400">
+            <span class="font-bold tracking-widest font-outline hover:bg-teal-200">
               optimiere
             </span>
             .
@@ -32,7 +32,7 @@ export default function Hero() {
             UX/UI-Designs für Software, Websites und Grafik. Mein Ziel ist es,
             durch <br />
             ansprechendes Design positive Veränderungen im Leben anderer zu
-            bewirken, während ich mich kontinuierlich weiterentwickle.
+            bewirken, während<br /> ich mich kontinuierlich weiterentwickle.
           </p>
           <div class="text-zinc-800 text-lg font-bold underline-offset-8 underline decoration-4">
             Schau dir meine Arbeiten an
