@@ -22,7 +22,7 @@ export default function Footer() {
               <source srcset={FooterImage} type="image/webp" />
               <img
                 src={FooterImage}
-                class=" "
+                class="rotate-45 md:rotate-0 "
                 width=""
                 height=""
                 alt={`Footer Image pointing to call to action`}

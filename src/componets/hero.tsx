@@ -20,7 +20,7 @@ export default function Hero() {
               gestalte
             </span>
             ,{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-teal-200">
+            <span class="font-bold tracking-widest font-outline hover:bg-teal-200 ">
               optimiere
             </span>
             .
