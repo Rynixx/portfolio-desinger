@@ -1,6 +1,6 @@
 import type { Component } from "solid-js";
+import { lazy } from "solid-js";
 import Hero from "./componets/hero";
-import Preview from "./componets/preview";
 import Footer from "./componets/footer";
 import ChatbotImg from "/images/chatbot.png";
 import ChatbotWebp from "/images/chatbot.webp";
@@ -9,6 +9,7 @@ import CodingWebp from "/images/codingday.webp";
 import SafepawImg from "/images/safepaw.png";
 import SafepawWebp from "/images/safepaw.webp";
 const App: Component = () => {
+  const Preview = lazy(() => import("./componets/preview"));
   return (
     <>
       <Hero />
