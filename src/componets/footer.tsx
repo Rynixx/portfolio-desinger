@@ -1,5 +1,5 @@
 import FooterImage from "/images/footer.png";
-import HeroImageWebP from "/images/hero.webp";
+import FooterImageWebP from "/images/footer.webp";
 export default function Footer() {
     return (
       <>
@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <div class="">
             <picture>
-              <source srcset={FooterImage} type="image/webp" />
+              <source srcset={FooterImageWebP} type="image/webp" />
               <img
                 src={FooterImage}
                 class="rotate-45 md:rotate-0 "
