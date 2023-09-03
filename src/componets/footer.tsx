@@ -23,8 +23,8 @@ export default function Footer() {
               <img
                 src={FooterImage}
                 class="rotate-45 md:rotate-0 "
-                width=""
-                height=""
+                width={624}
+                height={1000}
                 alt={`Footer Image pointing to call to action`}
               />
             </picture>
