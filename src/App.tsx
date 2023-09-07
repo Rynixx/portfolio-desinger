@@ -2,16 +2,26 @@ import type { Component } from "solid-js";
 import { lazy } from "solid-js";
 import Hero from "./componets/hero";
 import Footer from "./componets/footer";
+import { Routes, Route } from "@solidjs/router";
+
 import ChatbotImg from "/images/chatbot.png";
 import ChatbotWebp from "/images/chatbot.webp";
 import CodingImg from "/images/codingday.png";
 import CodingWebp from "/images/codingday.webp";
 import SafepawImg from "/images/safepaw.png";
 import SafepawWebp from "/images/safepaw.webp";
+import Project from "./pages/project/[id]";
 const App: Component = () => {
   const Preview = lazy(() => import("./componets/preview"));
   return (
     <>
+          <Routes>
+        <Route
+          path="/Project/:id/"
+          component={Project}
+          data={ProjectData}
+        />
+      </Routes>
       <Hero />
       <div class="zinc-400 mb-9 font-light mx-auto px-4 sm:px-6 md:px-20 font-titillium text-sm">
         <span class="w-20 h-px border-"></span>Meine arbeiten{" "}
