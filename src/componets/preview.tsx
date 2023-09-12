@@ -20,6 +20,7 @@ export default function Preview(props) {
             <source srcset={props.imageWebp} type="image/webp" />
             <img
               src={props.image}
+              loading="lazy"
               class="w-px-500 "
               width="508px"
               height="315px"
