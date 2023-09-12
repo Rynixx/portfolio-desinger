@@ -44,7 +44,7 @@ export default function Hero() {
             <img
               src={HeroImage}
               width={624}
-              height={1000}
+              height={1010}
               alt="Bild des Desinger der Website"
             />
           </picture>
