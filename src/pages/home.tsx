@@ -2,14 +2,14 @@
 import { lazy } from "solid-js";
 import Hero from "../componets/hero";
 import Footer from "../componets/footer";
-
+import Divider from "../componets/divider"
 const Preview = lazy(() => import("../componets/preview"));
 export default function Project() {
   return (
     <>
       <Hero />
-      <div class="zinc-400 mb-9 font-light mx-auto px-4 sm:px-6 md:px-20 font-titillium text-sm">
-        <span class="w-20 h-px border-"></span>Meine arbeiten{" "}
+      <div class="flex content-center flex-row mb-9 font-light mx-auto px-4 sm:px-6 md:px-20 font-titillium text-sm">
+        <Divider title="Meine arbeiten" border="border-zinc-800"/>
       </div>
       <Preview
         title="Chatbot User Interface"

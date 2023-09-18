@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
           </div>
           <a
-            class="font-bold underline-offset-8 underline decoration-4"
+            class="font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]"
             href=""
           >
             CV Herunterladen

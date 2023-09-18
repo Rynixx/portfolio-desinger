@@ -9,7 +9,7 @@ export default function Preview(props) {
           <p class="text-xl max-w-xl">{props.desc}</p>
           <span class="w-min pl-4 pr-4 bg-zinc-100 rounded-full">{props.labels}</span>
           <a
-            class="font-bold pb-10 md:pb-0 underline-offset-8 underline decoration-4"
+            class="font-bold pb-10 md:pb-0 underline-offset-8 underline decoration-2 hover:decoration-[7px]"
             href={props.route}
           >
             Zum Projekt
