@@ -1,6 +1,7 @@
 // pages/projects/[id].js
 import { useRouteData } from "@solidjs/router";
 import Divider from "../../componets/divider";
+import ProjectInfo from "../../componets/projectInfo";
 
 export default function Project() {
   //const project = useRouteData();
@@ -32,8 +33,10 @@ export default function Project() {
         <img src={project.title1.img} loading="eager"></img>
       </div>
     </div>
+    <ProjectInfo />
     <div class="w-full justify-evenly flex flex-col-reverse mt-2 p-9 lg:flex-row ">
       <div>
+        
       <Divider title="Problem" border="border-zinc-800"/>
         <h1 class="text-3xl mt-5 mb-5 font-bold max-w-xl">{project.title2.title}</h1>
         <p class="text-lg mt-5 mb-5 font-light max-w-xl">{project.title2.paragraph}</p>
