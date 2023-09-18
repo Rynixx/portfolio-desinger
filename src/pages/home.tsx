@@ -8,9 +8,9 @@ export default function Project() {
   return (
     <>
       <Hero />
-      <div class="flex content-center flex-row mb-9 font-light mx-auto px-4 sm:px-6 md:px-20 font-titillium text-sm">
-        <Divider title="Meine arbeiten" border="border-zinc-800"/>
-      </div>
+      <div class="text-zinc-400 px-10">
+        <Divider title="Meine arbeiten" border="border-zinc-400"/>
+        </div>
       <Preview
         title="Chatbot User Interface"
         desc="Ein innovativer Chatbot wurde entwickelt, um eine breite Palette von Fragen zu beantworten und Unklarheiten auszuräumen. Dieser Chatbot bietet den Nutzern wertvolle Hilfe und Unterstützung."
