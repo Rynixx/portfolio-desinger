@@ -2,7 +2,7 @@
 import { useRouteData } from "@solidjs/router";
 import Divider from "../../componets/divider";
 import ProjectInfo from "../../componets/projectInfo";
-
+import Gallery from "../../componets/gallery";
 export default function Project() {
   //const project = useRouteData();
   const project = {
@@ -55,6 +55,11 @@ export default function Project() {
         <img src={project.title3.img} loading="eager"></img>
       </div>
     </div>
+    <div class="w-full flex  flex-col pt-16 lg:flex-col p-9">
+        <h1 class="text-3xl lg:ml-24 mt-5 mb-5 font-bold max-w-xl">{project.title2.title}</h1>
+        <p class="text-lg lg:ml-24 mt-5 mb-5 font-light max-w-xl">{project.title2.paragraph}</p>
+    </div>
+    <div><Gallery/></div>
   </div>
   );
 }
