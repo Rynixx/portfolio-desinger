@@ -84,12 +84,13 @@ export default function Project(props) {
         </p>
       </div>
       {projectData()?.fields?.download?.sys?.id && (
+        <div class="flex flex-row justify-center mb-5">
         <a
           href={link()}
           class="font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]"
         >
           Projekthandbuch öffnen
-        </a>
+        </a></div>
       )}
       <div class="mb-5">
         {projectData() && projectData()?.fields.gallery && (
