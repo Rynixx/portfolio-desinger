@@ -11,7 +11,7 @@ const App: Component = () => {
     <>
       <Routes>
         <Route
-          path="/Project/:id/"
+          path="/Project/:id"
           component={Project}
           //data={Data}
         />

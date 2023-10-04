@@ -4,15 +4,15 @@ export default function ProjectInfo(props) {
       <div class="mt-10 text-center p-5 border-gray-100 mx-auto border-[1px] justify-evenly flex flex-col lg:flex-row">
         <div class="flex flex-col p-5">
           <div class="font-bold text-base">Rolle</div>
-          <p class="font-light">test{props.role}</p>
+          <p class="font-light">{props.tags?.Rolle}</p>
         </div>{" "}
         <div class="flex flex-col p-5">
           <div class="font-bold text-base">Team</div>
-          <p>test{props.role}</p>
+          <p>{props.tags?.Team[0]}<br/>{props.tags?.Team[1]}</p>
         </div>{" "}
         <div class="flex flex-col p-5">
           <div class="font-bold text-base">Dauer</div>
-          <p>test{props.role}</p>
+          <p>{props.tags?.Dauer}</p>
         </div>{" "}
       </div>
       </div>

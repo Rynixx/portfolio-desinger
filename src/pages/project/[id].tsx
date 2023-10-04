@@ -1,63 +1,54 @@
 // pages/projects/[id].js
-import { useRouteData } from "@solidjs/router";
+import { useParams, useRouteData } from "@solidjs/router";
 import Divider from "../../componets/divider";
 import ProjectInfo from "../../componets/projectInfo";
 import Gallery from "../../componets/gallery";
-export default function Project() {
-  //const project = useRouteData();
-  const project = {
-    title1: {
-        title: "Chatbot User Interface",
-        paragraph: "Der Chatbot wurde speziell entwickelt, um Lehrlinge während eines Hackathons zu unterstützen, indem er häufig gestellte Fragen beantwortet und nützliche Ressourcen bereitstellt. Der Chatbot ist in der Lage, Fragen zu verschiedenen Themen zu beantworten. Zudem bietet er eine intuitive Benutzeroberfläche, die es den Lehrlingen ermöglicht, schnell und einfach Antworten auf ihre Fragen zu erhalten.",
-        img:"/images/chatbot.png"
-    },
-    title2: {
-        title: "Während Lehrlinge an Hackathons und Programmier-Wettbewerben teilnehmen, entstehen während des Events Fragen, die schnell und präzise beantwortet werden sollen.",
-        paragraph: "Während jedes Hackathons nehmen 20-100 Lehrlinge teil. Während dieses Programmier-Wettbewerbs stellen sich den Lehrlingen Fragen zu Themen wie Programmen und Organisation. Es ist wichtig, diese Fragen präzise zu beantworten, ohne den Ablauf der Mitarbeiter zu beeinträchtigen.",
-        img:"/images/projects/1/mac-book-pro-161.png"
-    },
-    title3: {
-        title: "Mithilfe fortschrittlicher KI-Technologie wird angestrebt, einen Chatbot für die Lehrlinge bereitzustellen. Dadurch ist es möglich, während des Hackathons zeitgleich auf Fragen einzugehen.",
-        paragraph: "Zu Beginn meiner Arbeit konzentrierte ich mich darauf, grafische Elemente zu entwickeln, die den Lehrlingen eine Verbindung ermöglichen, gleichzeitig jedoch die Professionalität der Preisverleihung bewahren. Dadurch entstand das Apprentigo Einhorn, das als Maskottchen diente und mit Programmier-Elementen und Hexagons verschmolzen wurde. Die Einhaltung des Corporate Designs ermöglichte die Kreation mehrerer Produkte, die nicht nur eine Verbindung zu den Lehrlingen herstellen, sondern sie auch würdigen und ehren.",
-        img:"/images/projects/1/surface-laptop-studio.png"
-    }
-  };
+
+import getData from "../../componets/getData"
+import { resolveLink } from "../../helpers/resolveImg"
+import { createResource, createSignal } from "solid-js";
+export default function Project(props) {
+  const params = useParams()
+  const [projectData] = createResource(() => params.id, getData);
+  const [image1] = createResource(() => projectData()?.fields.projectimage[0]?.sys.id, resolveLink);
+  const [image2] = createResource(() => projectData()?.fields.projectimage[1]?.sys.id, resolveLink);
+  const [image3] = createResource(() => projectData()?.fields.projectimage[2]?.sys.id, resolveLink);
+
   return (
   <div>
     <div class="w-full justify-evenly flex flex-col-reverse lg:flex-row bg-blue-200 p-9">
       <div>
-        <h1 class="text-5xl mt-5 mb-5 font-bold max-w-xl">{project.title1.title}</h1>
-        <p class="text-lg mt-5 mb-5 font-light max-w-xl">{project.title1.paragraph}</p>
+        <h1 class="text-5xl mt-5 mb-5 font-bold max-w-xl">{projectData()?.fields.title}</h1>
+        <p class="text-lg mt-5 mb-5 font-light max-w-xl">{projectData()?.fields.headingDesc.content[0].content[0].value}</p>
       </div>
       <div class="lg:p-10">
-        <img src={project.title1.img} loading="eager"></img>
+        <img src={image1()} loading="eager"></img>
       </div>
     </div>
-    <ProjectInfo />
+    <ProjectInfo tags={projectData()?.fields.tags} />
     <div class="w-full justify-evenly flex flex-col-reverse mt-2 p-9 lg:flex-row ">
       <div>
-        
       <Divider title="Problem" border="border-zinc-800"/>
-        <h1 class="text-3xl mt-5 mb-5 font-bold max-w-xl">{project.title2.title}</h1>
-        <p class="text-lg mt-5 mb-5 font-light max-w-xl">{project.title2.paragraph}</p>
-      </div>
+        <h1 class="text-3xl mt-5 mb-5 font-bold max-w-xl">{projectData()?.fields.sectionHeading1}</h1>
+        <p class="text-lg mt-5 mb-5 font-light max-w-xl">{projectData()?.fields.sectionText1.content[0].content[0].value}</p>
+        </div>
       <div class="lg:p-10 max-w-xl">
-        <img src={project.title2.img} loading="eager"></img>
+        <img src={image2()}  loading="eager"></img>
       </div>
     </div>
     <div class="w-full justify-evenly flex flex-col-reverse pt-16 lg:flex-row p-9 bg-cyan-700 text-white">
       <div>
       <Divider title="Lösung" border="border-white"/>
-        <h1 class="text-3xl mt-5 mb-5 font-bold max-w-xl">{project.title2.title}</h1>
-        <p class="text-lg mt-5 mb-5 font-light max-w-xl">{project.title2.paragraph}</p>
+        <h1 class="text-3xl mt-5 mb-5 font-bold max-w-xl">{projectData()?.fields.sectionHeading2}</h1>
+        <p class="text-lg mt-5 mb-5 font-light max-w-xl">{projectData()?.fields.sectionText2.content[0].content[0].value}</p>
       </div>
       <div class="lg:p-10 max-w-xl">
-        <img src={project.title3.img} loading="eager"></img>
+        <img src={image3()}  loading="eager"></img>
       </div>
     </div>
     <div class="w-full flex  flex-col pt-16 lg:flex-col p-9">
-        <h1 class="text-3xl lg:ml-24 mt-5 mb-5 font-bold max-w-xl">{project.title2.title}</h1>
-        <p class="text-lg lg:ml-24 mt-5 mb-5 font-light max-w-xl">{project.title2.paragraph}</p>
+        <h1 class="text-3xl lg:ml-24 mt-5 mb-5 font-bold max-w-xl">{projectData()?.fields.sectionHeading3}</h1>
+        <p class="text-lg lg:ml-24 mt-5 mb-5 font-light max-w-xl">{projectData()?.fields.sectionText3.content[0].content[0].value}</p>
     </div>
     <div><Gallery/></div>
   </div>
