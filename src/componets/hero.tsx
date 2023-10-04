@@ -12,15 +12,15 @@ export default function Hero() {
           </h1>
           <h2 class="text-zinc-800 text-2xl lg:text-4xl font-bold">
             Ich{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-blue-200">
+            <span class="font-bold tracking-widest font-outline hover:bg-blue-200  hover:text-zinc-800">
               konzipierte
             </span>{" "}
             &{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-pink-300">
+            <span class="font-bold tracking-widest font-outline hover:bg-pink-300 hover:text-zinc-800">
               gestalte
             </span>
             ,{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-teal-200 ">
+            <span class="font-bold tracking-widest font-outline hover:bg-teal-200  hover:text-zinc-800 ">
               optimiere
             </span>
             .
