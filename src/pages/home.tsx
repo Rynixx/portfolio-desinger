@@ -26,7 +26,7 @@ export default function Project() {
         image="/images/codingday.png"
         imageWebp="/images/codingday.webp"
         route="/project/2"
-        labels="Design"
+        labels="Grafik Design"
         flex="flex-row-reverse"
       />
       <Preview
@@ -35,7 +35,7 @@ export default function Project() {
         image="/images/tutor.png"
         imageWebp="/images/tutor.webp"
         route="/project/1"
-        labels="UI/UX"
+        labels="UX/UI Design"
         flex="flex-row"
       />
       <Preview
@@ -44,7 +44,7 @@ export default function Project() {
         image="/images/safepaw.png"
         imageWebp="/images/safepaw.webp"
         route="/project/3"
-        labels="UI/UX"
+        labels="Tag 1: UX/UI Design"
         flex="flex-row-reverse"
       />
       <Footer />
