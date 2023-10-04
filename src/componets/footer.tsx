@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
           <a
             class="font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]"
-            href=""
+            href="/pdfs/cv.jpg"
           >
             CV Herunterladen
           </a>

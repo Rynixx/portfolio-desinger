@@ -23,13 +23,10 @@ export default function Project(props) {
     resolveLink
   );
   const [link] = createResource(() => {
-    const id = projectData()?.fields.download?.sys?.id || null;
+    const id = projectData()?.fields.download?.sys?.id;
     if (id) {
-      return resolveLink(id);
-    } else {
-      return Promise.resolve(null);
-    }
-  });
+      return projectData()?.fields.download?.sys?.id,resolveLink}}
+  );
   return (
     <div class="pt-page-moveFromRight">
       <div class="w-full justify-evenly flex flex-col-reverse lg:flex-row bg-blue-200 p-9">
@@ -86,7 +83,7 @@ export default function Project(props) {
       {projectData()?.fields?.download?.sys?.id && (
         <div class="flex flex-row justify-center mb-5">
         <a
-          href={link()}
+          href="https://drive.google.com/file/d/1m0j-E-Den3AwTyWNoeTGMU-wDQ5AYyXS/view?usp=sharing"
           class="font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]"
         >
           Projekthandbuch öffnen
@@ -97,7 +94,7 @@ export default function Project(props) {
           <Gallery images={projectData()?.fields.gallery} />
         )}
       </div>
-      <div class="flex flex-row justify-center mb-5">
+      <div class="flex flex-row justify-center mb-10 mt-10">
         <a
           href="/"
           class="font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]"
