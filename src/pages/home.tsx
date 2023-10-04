@@ -8,7 +8,7 @@ export default function Project() {
   return (
     <>
       <Hero />
-      <div class="text-zinc-400 px-10">
+      <div id="projects" class="text-zinc-400 px-10">
         <Divider title="Meine arbeiten" border="border-zinc-400"/>
         </div>
       <Preview
@@ -17,7 +17,7 @@ export default function Project() {
         image="/images/chatbot.png"
         imageWebp="/images/chatbot.webp"
         route="/project/0"
-        labels="UI/UX"
+        labels="UI/UX Design"
         flex="flex-row"
       />
       <Preview
@@ -25,7 +25,7 @@ export default function Project() {
         desc="Meine Kreationen für den CodingDay-Merchandise – von Pokalen über Plakate bis zu Kleidung und Stickern – spiegeln die Begeisterung fürs Coden wider und würdigen die Teilnehmer."
         image="/images/codingday.png"
         imageWebp="/images/codingday.webp"
-        route="/project/1"
+        route="/project/2"
         labels="Design"
         flex="flex-row-reverse"
       />
@@ -34,7 +34,7 @@ export default function Project() {
         desc="Ich entwarf eine Website, um Tutoren für unsere Hackathons zu finden. Dabei nutzte ich intensiv UX und UI, um eine benutzerfreundliche und ansprechende Erfahrung zu gewährleisten."
         image="/images/tutor.png"
         imageWebp="/images/tutor.webp"
-        route="/project/2"
+        route="/project/1"
         labels="UI/UX"
         flex="flex-row"
       />
