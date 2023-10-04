@@ -15,7 +15,7 @@ export default function Project(props) {
   const [image3] = createResource(() => projectData()?.fields.projectimage[2]?.sys.id, resolveLink);
 
   return (
-  <div>
+  <div class="pt-page-moveFromRight">
     <div class="w-full justify-evenly flex flex-col-reverse lg:flex-row bg-blue-200 p-9">
       <div>
         <h1 class="text-5xl mt-5 mb-5 font-bold max-w-xl">{projectData()?.fields.title}</h1>
@@ -50,7 +50,7 @@ export default function Project(props) {
         <h1 class="text-3xl lg:ml-24 mt-5 mb-5 font-bold max-w-xl">{projectData()?.fields.sectionHeading3}</h1>
         <p class="text-lg lg:ml-24 mt-5 mb-5 font-light max-w-xl">{projectData()?.fields.sectionText3.content[0].content[0].value}{projectData()?.fields.sectionText1.content[1]?.content[0].value}</p>
     </div>
-    <div><Gallery/></div>
+    <div><Gallery images={projectData()?.fields.gallery}/></div>
   </div>
   );
 }

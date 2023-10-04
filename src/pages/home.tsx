@@ -26,7 +26,7 @@ export default function Project() {
         image="/images/codingday.png"
         imageWebp="/images/codingday.webp"
         route="/project/1"
-        labels="Graphic Design"
+        labels="Design"
         flex="flex-row-reverse"
       />
       <Preview

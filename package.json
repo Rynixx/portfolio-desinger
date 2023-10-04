@@ -21,6 +21,7 @@
   "dependencies": {
     "@solidjs/router": "^0.8.3",
     "solid-js": "^1.7.6",
+    "solid-transition-group": "^0.2.3",
     "styled-components": "^5.3.11"
   }
 }
