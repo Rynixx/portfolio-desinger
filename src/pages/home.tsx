@@ -17,7 +17,7 @@ export default function Project() {
         image="/images/chatbot.png"
         imageWebp="/images/chatbot.webp"
         route="/project/0"
-        labels="UI/UX Design"
+        labels={["UX/UI Design", "UX-Research"]}
         flex="flex-row"
       />
       <Preview
@@ -44,7 +44,7 @@ export default function Project() {
         image="/images/safepaw.png"
         imageWebp="/images/safepaw.webp"
         route="/project/3"
-        labels="Tag 1: UX/UI Design"
+        labels={["UX/UI Design", "UX-Research"]}
         flex="flex-row-reverse"
       />
       <Footer />
