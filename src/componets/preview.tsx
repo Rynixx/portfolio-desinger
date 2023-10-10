@@ -20,7 +20,7 @@ export default function Preview(props) {
             </For>
           </div>
           <a
-            class="font-bold pb-10 md:pb-0 underline-offset-8 underline decoration-[7px] hover:decoration-2"
+            class="font-bold pb-10 md:pb-0 underline-offset-8 underline decoration-4 hover:decoration-[10px]"
             href={props.route}
           >
             Zum Projekt

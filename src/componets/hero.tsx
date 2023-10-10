@@ -12,15 +12,15 @@ export default function Hero() {
           </h1>
           <h2 class="text-zinc-800 fade-in text-2xl lg:text-4xl font-bold">
             Ich{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-blue-200  hover:text-zinc-800">
+            <span class="font-bold tracking-widest font-outline hover:bg-blue-200 hover:font-hover hover:text-zinc-800">
               konzipierte
             </span>{" "}
             &{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-pink-300 hover:text-zinc-800">
+            <span class="font-bold tracking-widest font-outline hover:bg-pink-300 hover:font-hover hover:text-zinc-800">
               gestalte
             </span>
             ,{" "}
-            <span class="font-bold tracking-widest font-outline hover:bg-teal-200  hover:text-zinc-800 ">
+            <span class="font-bold tracking-widest font-outline hover:bg-teal-200 hover:font-hover hover:text-zinc-800 ">
               optimiere
             </span>
             .
@@ -34,7 +34,7 @@ export default function Hero() {
             ansprechendes Design positive Veränderungen im Leben anderer zu
             bewirken, während<br /> ich mich kontinuierlich weiterentwickle.
           </p>
-          <div class="text-zinc-800 fade-in-slow  text-lg font-bold underline-offset-8 underline decoration-[10px] hover:decoration-4">
+          <div class="text-zinc-800 fade-in-slow  text-lg font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]">
             <a href="#projects">Schau dir meine Arbeiten an</a>
           </div>
         </div>
