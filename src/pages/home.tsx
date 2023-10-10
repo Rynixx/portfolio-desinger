@@ -16,7 +16,7 @@ export default function Project() {
         desc="Ein innovativer Chatbot wurde entwickelt, um eine breite Palette von Fragen zu beantworten und Unklarheiten auszuräumen. Dieser Chatbot bietet den Nutzern wertvolle Hilfe und Unterstützung."
         image="/images/chatbot.png"
         imageWebp="/images/chatbot.webp"
-        route="/project/0"
+        route="/project/2"
         labels={["UX/UI Design", "UX-Research"]}
         flex="flex-row"
       />
@@ -25,7 +25,7 @@ export default function Project() {
         desc="Meine Kreationen für den CodingDay-Merchandise – von Pokalen über Plakate bis zu Kleidung und Stickern – spiegeln die Begeisterung fürs Coden wider und würdigen die Teilnehmer."
         image="/images/codingday.png"
         imageWebp="/images/codingday.webp"
-        route="/project/2"
+        route="/project/3"
         labels="Grafik Design"
         flex="flex-row-reverse"
       />
@@ -43,7 +43,7 @@ export default function Project() {
         desc="Schon jemals von einer zuverlässigen Haustierversicherung gehört? Wir auch nicht. Unsere Aufgabe war es eine stabile aber dennoch optisch zuverlässige Haustierversicherung zu gestalten."
         image="/images/safepaw.png"
         imageWebp="/images/safepaw.webp"
-        route="/project/3"
+        route="/project/0"
         labels={["UX/UI Design", "UX-Research"]}
         flex="flex-row-reverse"
       />

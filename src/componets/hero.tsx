@@ -34,7 +34,7 @@ export default function Hero() {
             ansprechendes Design positive Veränderungen im Leben anderer zu
             bewirken, während<br /> ich mich kontinuierlich weiterentwickle.
           </p>
-          <div class="text-zinc-800 fade-in-slow  text-lg font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]">
+          <div class="text-zinc-800 fade-in-slow  text-lg font-bold underline-offset-8 underline decoration-[10px] hover:decoration-4">
             <a href="#projects">Schau dir meine Arbeiten an</a>
           </div>
         </div>
