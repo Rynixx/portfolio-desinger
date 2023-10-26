@@ -6,7 +6,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 .font-outline {
   display: inline-block;
   border-radius: 0px;
@@ -20,10 +19,32 @@ html {
 .font-hover{
   text-shadow: none!important;
 }
+
+/*  animation: underlineGrow 1s ease-in-out forwards;*/
+  .underlined-text {
+    text-decoration: underline;
+    text-underline-offset: 14px;
+    text-decoration-thickness: 4px;
+    transition: text-underline-offset 0.5s, text-decoration-thickness 0.5s;
+  }
+  
+  .underlined-text:hover {
+    animation:underlineGrow 0.2s ease-in-out forwards;
+  }
+
+@keyframes underlineGrow {
+  from {
+    text-underline-offset: 12px;
+    text-decoration-thickness: 4px;
+  }
+  to {
+    text-underline-offset: 9px; /* Adjust this value to control the offset distance on hover */
+    text-decoration-thickness: 9px; /* Adjust this value to control the thickness on hover */
+  }
+}
 .fade-in {
   animation: fadeIn 2s;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -38,7 +59,6 @@ html {
 .fade-in-slow {
   animation: fadeIn 4s;
 }
-
 .pt-page-moveFromRight {
   -webkit-animation: moveFromRight 0.6s ease both;
   animation: moveFromRight 0.6s ease both;

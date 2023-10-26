@@ -39,7 +39,7 @@ export default function Project(props) {
             {projectData()?.fields.headingDesc.content[0].content[0].value}
           </p>
         </div>
-        <div class="lg:p-10">
+        <div class="lg:p-10 max-w-xl">
           <img src={image1()} loading="eager"></img>
         </div>
       </div>
@@ -112,7 +112,7 @@ export default function Project(props) {
           <a
             target="_blank"
             href="https://drive.google.com/file/d/1m0j-E-Den3AwTyWNoeTGMU-wDQ5AYyXS/view?usp=sharing"
-            class="font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]"
+            class="font-bold underlined-text"
           >
             Projekthandbuch öffnen
           </a>
@@ -126,7 +126,7 @@ export default function Project(props) {
       <div class="flex flex-row justify-center mb-10 mt-10">
         <a
           href="/"
-          class="font-bold underline-offset-8 underline decoration-4 hover:decoration-[10px]"
+          class="font-bold underlined-text"
         >
           Zurück zu den Projekten
         </a>
