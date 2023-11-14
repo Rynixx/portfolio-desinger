@@ -43,7 +43,7 @@ export default function Hero() {
             <source srcset={HeroImageWebP} type="image/webp" />
             <img
               src={HeroImage}
-              width={624}
+              width={621}
               height={1010}
               alt="Bild des Desinger der Website"
             />
